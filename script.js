@@ -7,7 +7,7 @@ var no3=false;
 var no4=false;
 var firstClick=false;
 function hide(){
-	document.getElementById('no1').classList.add('active');
+	/*document.getElementById('no1').classList.add('active');*/
 	if(window.innerWidth>window.innerHeight){
 		
 		document.getElementById('no1Content').style.display="none";
