@@ -58,15 +58,17 @@ function displayNo1(){
 
 	if(no1==false){
 		no1=true;
-		/*
-		document.getElementById('no1').style.width="50%";
-		document.getElementById('no1').style.width="25%";
-		document.getElementById('no1').style.width="25%";*/
+		
 		document.getElementById('no1').classList.add('active');
 		document.getElementById('no2').classList.remove('active');
 		document.getElementById('no3').classList.remove('active');
 		document.getElementById('no4').classList.remove('active');
-		
+
+		document.getElementById('back1').classList.add('active');
+		document.getElementById('back2').classList.remove('active');
+		document.getElementById('back3').classList.remove('active');
+		document.getElementById('back4').classList.remove('active');
+
 		document.getElementById('no1Content').style.display="inline";
 		window.setTimeout(function(){document.getElementById('no1Content').classList.add('opacityUp')},10);
 		document.getElementById('back1').classList.add('active');
@@ -104,6 +106,11 @@ function displayNo2(){
 		document.getElementById('no3').classList.remove('active');
 		document.getElementById('no4').classList.remove('active');
 		/*document.getElementById('no2Content').style.width="50%";*/
+		
+		document.getElementById('back1').classList.remove('active');
+		document.getElementById('back2').classList.add('active');
+		document.getElementById('back3').classList.remove('active');
+		document.getElementById('back4').classList.remove('active');
 
 		document.getElementById('no2Content').style.display="inline";
 		window.setTimeout(function(){document.getElementById('no2Content').classList.add('opacityUp')},10);
@@ -141,6 +148,12 @@ function displayNo3(){
 		document.getElementById('no2').classList.remove('active');
 		document.getElementById('no3').classList.add('active');
 		document.getElementById('no4').classList.remove('active');
+
+		document.getElementById('back1').classList.remove('active');
+		document.getElementById('back2').classList.remove('active');
+		document.getElementById('back3').classList.add('active');
+		document.getElementById('back4').classList.remove('active');
+
 
 		document.getElementById('no3Content').style.display="inline";
 		window.setTimeout(function(){document.getElementById('no3Content').classList.add('opacityUp')},10);
@@ -181,7 +194,14 @@ function displayNo4(){
 		document.getElementById('no2').classList.remove('active');
 		document.getElementById('no3').classList.remove('active');
 		document.getElementById('no4').classList.add('active');
+
+		document.getElementById('no1').classList.add('contanier.active');
 		
+		document.getElementById('back1').classList.remove('active');
+		document.getElementById('back2').classList.remove('active');
+		document.getElementById('back3').classList.remove('active');
+		document.getElementById('back4').classList.add('active');
+
 		document.getElementById('no4Content').style.display="inline";
 		window.setTimeout(function(){document.getElementById('no4Content').classList.add('opacityUp')},10);
 		document.getElementById('topMargin4').classList.add('transitionUp');
