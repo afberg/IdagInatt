@@ -38,7 +38,7 @@ html, body {
 
 .divider{
 	position: relative;
-	box-shadow: 0 0 30px 30px rgba(255,255,255,0.1) inset;
+	box-shadow: 0 0 30px 30px rgba(255,241,214,0.1) inset;
 	width:20%;
 	height:100%;
 	margin:0px;
@@ -54,7 +54,6 @@ html, body {
 	border-top:none;
 	border-bottom:none;
 	border-left:none;
-	padding:1%;
 
 }
 .activeDivider{
@@ -132,7 +131,7 @@ html, body {
 h1{
 	text-align: center;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'ChopinScript';
+	font-family: 'Sorts Mill Goudy', serif;
 	font-weight: normal;
 	font-size: 5rem;
 	font-weight: normal;
@@ -145,7 +144,7 @@ h1{
 
 h3{
 	text-align: center;
-	font-family: 'ChopinScript';
+	font-family: 'Sorts Mill Goudy', serif;
 	font-weight: normal;
 	font-size: 2rem;
 	margin-bottom: 0px;
@@ -165,6 +164,7 @@ p:first-letter{
 }
 
 p{
+	padding:4%;
 	font-size:1.46rem;
 	font-weight: normal;
 	font-family: 'Georgia';
@@ -175,7 +175,7 @@ p{
 
 .content{
 	z-index:1;
-	color: rgba(53,53,53,1);
+	color: rgba(255,241,214,1);
 	transition:color 1s, margin-top 1s;
 	margin-top:-10%;
 
@@ -211,7 +211,7 @@ p{
 }
 
 .container.active {
-	opacity: 0.9 !important;
+	opacity: 0.95 !important;
 
 	width:100% !important;
 
@@ -219,11 +219,11 @@ p{
 
 
 .contentHide{
-	color: rgba(53,53,53,0);
+	color: rgba(255,241,214,0);
 }
 
 .opacityUp{
-	color: rgba(53,53,53,1);
+	color: rgba(255,241,214,1);
 	opacity:1;
 	
 	transition:all 0.5s;
