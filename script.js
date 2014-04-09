@@ -4,29 +4,36 @@ window.onresize=displayContent;
 var no1=false;
 var no2=false;
 var no3=false;
+var no4=false;
+var firstClick=true;
 function hide(){
+	document.getElementById('no1').classList.add('active');
 	if(window.innerWidth>window.innerHeight){
 		
 		document.getElementById('no1Content').style.display="none";
 		document.getElementById('no2Content').style.display="none";
 		document.getElementById('no3Content').style.display="none";
+		document.getElementById('no4Content').style.display="none";
 		document.getElementById('no1Content').classList.add('contentHide');
 		document.getElementById('no2Content').classList.add('contentHide');
 		document.getElementById('no3Content').classList.add('contentHide');
-
+		document.getElementById('no4Content').classList.add('contentHide');
 
 
 	}
+	
 }
 
 function displayContent(){
 	if(window.innerWidth<window.innerHeight){
-		no1=false;
+		no1=true;
 		no2=false;
 		no3=false;
+		no4=false;
 		displayNo1();
 		displayNo2();
 		displayNo3();
+		displayNo4();
 	}
 
 	if(window.innerWidth>=window.innerHeight){
@@ -39,6 +46,14 @@ function displayContent(){
 
 
 function displayNo1(){
+		if(firstClick){
+				document.getElementById('no1').classList.add('focustrans');
+				document.getElementById('no2').classList.add('focustrans');
+				document.getElementById('no3').classList.add('focustrans');
+				document.getElementById('no4').classList.add('focustrans');
+				firstClick=false;
+		}
+
 	if(no1==false){
 		no1=true;
 		/*
@@ -57,10 +72,12 @@ function displayNo1(){
 
 		hideNo2();
 		hideNo3();
+		hideNo4();
 
 	} 
 }
 function hideNo1() {
+
 		no1=false;
 		document.getElementById('no1Content').classList.remove('opacityUp');
 		window.setTimeout(function(){document.getElementById('no1Content').style.display="none"},500);
@@ -71,6 +88,13 @@ function hideNo1() {
 
 
 function displayNo2(){
+		if(firstClick){
+			document.getElementById('no1').classList.add('focustrans');
+			document.getElementById('no2').classList.add('focustrans');
+			document.getElementById('no3').classList.add('focustrans');
+			document.getElementById('no4').classList.add('focustrans');
+			firstClick=false;
+		}
 	if(no2==false){
 		no2=true;
 		document.getElementById('no1').classList.remove('active');
@@ -85,10 +109,11 @@ function displayNo2(){
 		document.getElementById('no2').classList.add('activeDivider');
 		hideNo1();
 		hideNo3();
+		hideNo4();
 	} 
 	}
 function hideNo2() {
-		no2=false
+		no2=false;
 		document.getElementById('no2Content').classList.remove('opacityUp');
 		window.setTimeout(function(){document.getElementById('no2Content').style.display="none"},500);
 		document.getElementById('no2').classList.remove('activeDivider');
@@ -99,6 +124,14 @@ function hideNo2() {
 }
 
 function displayNo3(){
+	if(firstClick){
+			document.getElementById('no1').classList.add('focustrans');
+			document.getElementById('no2').classList.add('focustrans');
+			document.getElementById('no3').classList.add('focustrans');
+			document.getElementById('no4').classList.add('focustrans');
+			firstClick=false;
+		}
+
 	if(no3==false){
 		no3=true;
 		
@@ -113,11 +146,12 @@ function displayNo3(){
 		document.getElementById('no3').classList.add('activeDivider');
 		hideNo1();
 		hideNo2();
+		hideNo4();
 	} 
 }
 function hideNo3(){
 		
-		no3=false
+		no3=false;
 		document.getElementById('no3Content').classList.remove('opacityUp');
 		window.setTimeout(function(){document.getElementById('no3Content').style.display="none"},500);
 		document.getElementById('no3').classList.remove('activeDivider');
@@ -129,6 +163,15 @@ function hideNo3(){
 
 
 function displayNo4(){
+	if(firstClick){
+			document.getElementById('no1').classList.add('focustrans');
+			document.getElementById('no2').classList.add('focustrans');
+			document.getElementById('no3').classList.add('focustrans');
+			document.getElementById('no4').classList.add('focustrans');
+			firstClick=false;
+		
+		}
+			
 	if(no4==false){
 		no4=true;
 		
@@ -143,11 +186,12 @@ function displayNo4(){
 		document.getElementById('no4').classList.add('activeDivider');
 		hideNo1();
 		hideNo2();
+		hideNo3();
 	} 
 }
 function hideNo4(){
 		
-		no4=false
+		no4=false;
 		document.getElementById('no4Content').classList.remove('opacityUp');
 		window.setTimeout(function(){document.getElementById('no4Content').style.display="none"},500);
 		document.getElementById('no4').classList.remove('activeDivider');
