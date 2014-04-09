@@ -40,7 +40,7 @@ function displayNo1(){
 		no1=true;
 		document.getElementById('no1Content').style.display="inline";
 		window.setTimeout(function(){document.getElementById('no1Content').classList.add('opacityUp')},10);
-		document.getElementById('no1').classList.add('activeDivider');
+		document.getElementById('back1').classList.add('active');
 		document.getElementById('topMargin1').classList.add('transitionUpSpecial');
 
 		
