@@ -5,7 +5,7 @@ var no1=false;
 var no2=false;
 var no3=false;
 var no4=false;
-var firstClick=true;
+var firstClick=false;
 function hide(){
 	document.getElementById('no1').classList.add('active');
 	if(window.innerWidth>window.innerHeight){
@@ -21,6 +21,8 @@ function hide(){
 
 
 	}
+	displayNo1();
+	firstClick=true;
 	
 }
 
