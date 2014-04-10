@@ -43,17 +43,7 @@ html, body {
 	height:100%;
 	margin:0px;
 	float:left;
-	transition:color 1.5s, background-color 1.5s;
-	box-sizing:border-box;
-  	-moz-box-sizing:border-box;
-  	-webkit-box-sizing:border-box;
 
-  	border-style:dashed;
-  	border-color:rgba(53,53,53, 0.3);
-  	border-width: 1px;
-	border-top:none;
-	border-bottom:none;
-	border-left:none;
 
 }
 .activeDivider{
@@ -139,6 +129,7 @@ h1{
 	margin-bottom: 0px;
 	margin-top:0px;
 	letter-spacing: -3px;
+	-webkit-text-stroke: 2px rgba(0,0,0,0.2)
 }
 
 
@@ -328,8 +319,6 @@ p{
 
 		width: 100%;
 		height:25%;
-		border-right:none;
-		border-bottom:dashed 1px rgba(53,53,53, 0.3);;
 	}
 	#wrapper{
 		height:320%;
