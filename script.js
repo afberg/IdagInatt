@@ -21,7 +21,7 @@ function hide(){
 
 
 	}
-	displayNo1();
+	
 	firstClick=true;
 	
 }
@@ -49,35 +49,40 @@ function displayContent(){
 
 function displayNo1(){
 		if(firstClick){
-				document.getElementById('no1').classList.add('focustrans');
-				document.getElementById('no2').classList.add('focustrans');
-				document.getElementById('no3').classList.add('focustrans');
-				document.getElementById('no4').classList.add('focustrans');
-				firstClick=false;
+			document.getElementById('no1').classList.add('focustrans');
+			document.getElementById('no2').classList.add('focustrans');
+			document.getElementById('no3').classList.add('focustrans');
+			document.getElementById('no4').classList.add('focustrans');
+			firstClick=false;
+			document.getElementById('no1').classList.add('active');
+			document.getElementById('no1').classList.add('inactive');
+			document.getElementById('no2').classList.add('inactive');
+			document.getElementById('no3').classList.add('inactive');
+			document.getElementById('no4').classList.add('inactive');
 		}
+		else{
+			if(no1==false){
+				no1=true;
+				
+				document.getElementById('no1').classList.add('active');
+				document.getElementById('no2').classList.remove('active');
+				document.getElementById('no3').classList.remove('active');
+				document.getElementById('no4').classList.remove('active');
 
-	if(no1==false){
-		no1=true;
-		
-		document.getElementById('no1').classList.add('active');
-		document.getElementById('no2').classList.remove('active');
-		document.getElementById('no3').classList.remove('active');
-		document.getElementById('no4').classList.remove('active');
+				document.getElementById('back1').classList.add('active');
+				document.getElementById('back2').classList.remove('active');
+				document.getElementById('back3').classList.remove('active');
+				document.getElementById('back4').classList.remove('active');
 
-		document.getElementById('back1').classList.add('active');
-		document.getElementById('back2').classList.remove('active');
-		document.getElementById('back3').classList.remove('active');
-		document.getElementById('back4').classList.remove('active');
+				document.getElementById('no1Content').style.display="inline";
+				window.setTimeout(function(){document.getElementById('no1Content').classList.add('opacityUp')},10);
+				document.getElementById('back1').classList.add('active');
+				document.getElementById('topMargin1').classList.add('transitionUpSpecial');
 
-		document.getElementById('no1Content').style.display="inline";
-		window.setTimeout(function(){document.getElementById('no1Content').classList.add('opacityUp')},10);
-		document.getElementById('back1').classList.add('active');
-		document.getElementById('topMargin1').classList.add('transitionUpSpecial');
-
-		hideNo2();
-		hideNo3();
-		hideNo4();
-
+				hideNo2();
+				hideNo3();
+				hideNo4();
+	}
 	} 
 }
 function hideNo1() {
@@ -98,6 +103,11 @@ function displayNo2(){
 			document.getElementById('no3').classList.add('focustrans');
 			document.getElementById('no4').classList.add('focustrans');
 			firstClick=false;
+			document.getElementById('no2').classList.add('active');
+			document.getElementById('no1').classList.add('inactive');
+			document.getElementById('no2').classList.add('inactive');
+			document.getElementById('no3').classList.add('inactive');
+			document.getElementById('no4').classList.add('inactive');
 		}
 	if(no2==false){
 		no2=true;
@@ -139,6 +149,11 @@ function displayNo3(){
 			document.getElementById('no3').classList.add('focustrans');
 			document.getElementById('no4').classList.add('focustrans');
 			firstClick=false;
+			document.getElementById('no3').classList.add('active');
+			document.getElementById('no1').classList.add('inactive');
+			document.getElementById('no2').classList.add('inactive');
+			document.getElementById('no3').classList.add('inactive');
+			document.getElementById('no4').classList.add('inactive');
 		}
 
 	if(no3==false){
@@ -183,8 +198,13 @@ function displayNo4(){
 			document.getElementById('no2').classList.add('focustrans');
 			document.getElementById('no3').classList.add('focustrans');
 			document.getElementById('no4').classList.add('focustrans');
-			firstClick=false;
-		
+			
+			document.getElementById('no1').classList.add('inactive');
+			document.getElementById('no2').classList.add('inactive');
+			document.getElementById('no3').classList.add('inactive');
+			document.getElementById('no4').classList.add('inactive');
+			document.getElementById('no4').classList.add('active');
+		firstClick=false;
 		}
 			
 	if(no4==false){
