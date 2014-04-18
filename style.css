@@ -138,6 +138,7 @@ h3{
 	font-family: 'Sorts Mill Goudy', serif;
 	font-weight: normal;
 	font-size: 2rem;
+	text-align: center;
 	margin-bottom: 0px;
 	margin-top:20px;
 	transition:inherit;
@@ -181,17 +182,17 @@ p{
 }
 
 #back1{
-	opacity: 0.6;
+	opacity: 0.7;
 	background-color: #C5E0DC;
 	transition:all 1.5s;
 }
 #back2{
-	opacity: 0.6;
+	opacity: 0.7;
 	background-color: #ECE5CE;
 	transition:all 1.5s;
 }
 #back3{
-	opacity: 0.6;
+	opacity: 0.7;
 	background-color: #F1D4AF;
 	transition:all 1.5s;
 }
