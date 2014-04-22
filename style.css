@@ -151,7 +151,7 @@ p:first-letter{
 	font-weight: normal;
 	float:left;
 	padding:0px;
-	margin-bottom: -5px;
+	margin-bottom: -10px;
 
 }
 
@@ -367,7 +367,11 @@ table{
 	.divider{
 
 		width: 100% !important;
+		transition:all 0s;
 		
+	}
+	.container{
+		transition:all 0s;
 	}
 	#wrapper{
 		
