@@ -34,9 +34,9 @@ function hide(){
 function runIntro(){
 	window.setTimeout(function(){document.getElementById('introText').style.opacity="1"},500);
 	//document.getElementById('intro').classList.remove('killintro');
-	window.setTimeout(function(){document.getElementById('intro').classList.add('fadeout')},2500);
-	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2000);
-	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 4500);	
+	window.setTimeout(function(){document.getElementById('intro').classList.add('fadeout')},3000);
+	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2500);
+	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 5500);	
 	//document.getElementById('intro').classList.remove('fadeout');
 	//document.getElementById('intro').style.opacity = "1";
 	
@@ -123,6 +123,9 @@ function displayNo1(){
 			hideNo3();
 			hideNo4();
 		} 
+		else{
+
+		}
 	}else{
 		
 			document.getElementById('no1').classList.add('active');
