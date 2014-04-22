@@ -9,6 +9,7 @@ var firstClick=false;
 var landscape = true;
 function hide(){
 	/*document.getElementById('no1').classList.add('active');*/
+	displayContent();
 	if(window.innerWidth>window.innerHeight){
 			
 		document.getElementById('no1Content').style.display="none";
@@ -24,7 +25,7 @@ function hide(){
 	
 	
 	}
-	displayNo1();
+	//displayNo1();
 	firstClick=true;
 	
 }
@@ -79,6 +80,11 @@ function displayNo1(){
 			document.getElementById('no2').classList.add('focustrans');
 			document.getElementById('no3').classList.add('focustrans');
 			document.getElementById('no4').classList.add('focustrans');
+			document.getElementById('no1').classList.remove('initialSize');
+			document.getElementById('no2').classList.remove('initialSize');
+			document.getElementById('no3').classList.remove('initialSize');
+			document.getElementById('no4').classList.remove('initialSize');
+
 			firstClick=false;
 		}
 
@@ -141,6 +147,10 @@ function displayNo2(){
 			document.getElementById('no2').classList.add('focustrans');
 			document.getElementById('no3').classList.add('focustrans');
 			document.getElementById('no4').classList.add('focustrans');
+			document.getElementById('no1').classList.remove('initialSize');
+			document.getElementById('no2').classList.remove('initialSize');
+			document.getElementById('no3').classList.remove('initialSize');
+			document.getElementById('no4').classList.remove('initialSize');
 			firstClick=false;
 		}
 		if(no2==false){
@@ -184,6 +194,10 @@ function displayNo3(){
 			document.getElementById('no2').classList.add('focustrans');
 			document.getElementById('no3').classList.add('focustrans');
 			document.getElementById('no4').classList.add('focustrans');
+			document.getElementById('no1').classList.remove('initialSize');
+			document.getElementById('no2').classList.remove('initialSize');
+			document.getElementById('no3').classList.remove('initialSize');
+			document.getElementById('no4').classList.remove('initialSize');
 			firstClick=false;
 		}
 
@@ -231,6 +245,10 @@ function displayNo4(){
 			document.getElementById('no2').classList.add('focustrans');
 			document.getElementById('no3').classList.add('focustrans');
 			document.getElementById('no4').classList.add('focustrans');
+			document.getElementById('no1').classList.remove('initialSize');
+			document.getElementById('no2').classList.remove('initialSize');
+			document.getElementById('no3').classList.remove('initialSize');
+			document.getElementById('no4').classList.remove('initialSize');
 			firstClick=false;
 		
 		}
