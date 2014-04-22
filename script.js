@@ -6,10 +6,11 @@ var no2=false;
 var no3=false;
 var no4=false;
 var firstClick=false;
+var landscape = true;
 function hide(){
 	/*document.getElementById('no1').classList.add('active');*/
 	if(window.innerWidth>window.innerHeight){
-		
+			
 		document.getElementById('no1Content').style.display="none";
 		document.getElementById('no2Content').style.display="none";
 		document.getElementById('no3Content').style.display="none";
@@ -18,8 +19,11 @@ function hide(){
 		document.getElementById('no2Content').classList.add('contentHide');
 		document.getElementById('no3Content').classList.add('contentHide');
 		document.getElementById('no4Content').classList.add('contentHide');
+		
 
-
+	}
+	else{
+		landscape = false;
 	}
 	displayNo1();
 	firstClick=true;
@@ -48,37 +52,38 @@ function displayContent(){
 
 
 function displayNo1(){
+	if(window.innerWidth>window.innerHeight){
 		if(firstClick){
-				document.getElementById('no1').classList.add('focustrans');
-				document.getElementById('no2').classList.add('focustrans');
-				document.getElementById('no3').classList.add('focustrans');
-				document.getElementById('no4').classList.add('focustrans');
-				firstClick=false;
+			document.getElementById('no1').classList.add('focustrans');
+			document.getElementById('no2').classList.add('focustrans');
+			document.getElementById('no3').classList.add('focustrans');
+			document.getElementById('no4').classList.add('focustrans');
+			firstClick=false;
 		}
 
-	if(no1==false){
-		no1=true;
-		
-		document.getElementById('no1').classList.add('active');
-		document.getElementById('no2').classList.remove('active');
-		document.getElementById('no3').classList.remove('active');
-		document.getElementById('no4').classList.remove('active');
+		if(no1==false){
+			no1=true;
+			
+			document.getElementById('no1').classList.add('active');
+			document.getElementById('no2').classList.remove('active');
+			document.getElementById('no3').classList.remove('active');
+			document.getElementById('no4').classList.remove('active');
 
-		document.getElementById('back1').classList.add('active');
-		document.getElementById('back2').classList.remove('active');
-		document.getElementById('back3').classList.remove('active');
-		document.getElementById('back4').classList.remove('active');
+			document.getElementById('back1').classList.add('active');
+			document.getElementById('back2').classList.remove('active');
+			document.getElementById('back3').classList.remove('active');
+			document.getElementById('back4').classList.remove('active');
 
-		document.getElementById('no1Content').style.display="inline";
-		window.setTimeout(function(){document.getElementById('no1Content').classList.add('opacityUp')},10);
-		document.getElementById('back1').classList.add('active');
-		document.getElementById('topMargin1').classList.add('transitionUpSpecial');
+			document.getElementById('no1Content').style.display="inline";
+			window.setTimeout(function(){document.getElementById('no1Content').classList.add('opacityUp')},10);
+			document.getElementById('back1').classList.add('active');
+			document.getElementById('topMargin1').classList.add('transitionUpSpecial');
 
-		hideNo2();
-		hideNo3();
-		hideNo4();
-
-	} 
+			hideNo2();
+			hideNo3();
+			hideNo4();
+		} 
+	}
 }
 function hideNo1() {
 
@@ -92,6 +97,7 @@ function hideNo1() {
 
 
 function displayNo2(){
+	if(window.innerWidth>window.innerHeight){
 		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');
@@ -99,28 +105,29 @@ function displayNo2(){
 			document.getElementById('no4').classList.add('focustrans');
 			firstClick=false;
 		}
-	if(no2==false){
-		no2=true;
-		document.getElementById('no1').classList.remove('active');
-		document.getElementById('no2').classList.add('active');
-		document.getElementById('no3').classList.remove('active');
-		document.getElementById('no4').classList.remove('active');
-		/*document.getElementById('no2Content').style.width="50%";*/
-		
-		document.getElementById('back1').classList.remove('active');
-		document.getElementById('back2').classList.add('active');
-		document.getElementById('back3').classList.remove('active');
-		document.getElementById('back4').classList.remove('active');
+		if(no2==false){
+			no2=true;
+			document.getElementById('no1').classList.remove('active');
+			document.getElementById('no2').classList.add('active');
+			document.getElementById('no3').classList.remove('active');
+			document.getElementById('no4').classList.remove('active');
+			/*document.getElementById('no2Content').style.width="50%";*/
+			
+			document.getElementById('back1').classList.remove('active');
+			document.getElementById('back2').classList.add('active');
+			document.getElementById('back3').classList.remove('active');
+			document.getElementById('back4').classList.remove('active');
 
-		document.getElementById('no2Content').style.display="inline";
-		window.setTimeout(function(){document.getElementById('no2Content').classList.add('opacityUp')},10);
-		document.getElementById('topMargin2').classList.add('transitionUp');
-		document.getElementById('no2').classList.add('activeDivider');
-		hideNo1();
-		hideNo3();
-		hideNo4();
-	} 
+			document.getElementById('no2Content').style.display="inline";
+			window.setTimeout(function(){document.getElementById('no2Content').classList.add('opacityUp')},10);
+			document.getElementById('topMargin2').classList.add('transitionUp');
+			document.getElementById('no2').classList.add('activeDivider');
+			hideNo1();
+			hideNo3();
+			hideNo4();
+		} 
 	}
+}
 function hideNo2() {
 		no2=false;
 		document.getElementById('no2Content').classList.remove('opacityUp');
@@ -133,7 +140,8 @@ function hideNo2() {
 }
 
 function displayNo3(){
-	if(firstClick){
+	if(window.innerWidth>window.innerHeight){
+		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');
 			document.getElementById('no3').classList.add('focustrans');
@@ -141,28 +149,29 @@ function displayNo3(){
 			firstClick=false;
 		}
 
-	if(no3==false){
-		no3=true;
-		
-		document.getElementById('no1').classList.remove('active');
-		document.getElementById('no2').classList.remove('active');
-		document.getElementById('no3').classList.add('active');
-		document.getElementById('no4').classList.remove('active');
+		if(no3==false){
+			no3=true;
+			
+			document.getElementById('no1').classList.remove('active');
+			document.getElementById('no2').classList.remove('active');
+			document.getElementById('no3').classList.add('active');
+			document.getElementById('no4').classList.remove('active');
 
-		document.getElementById('back1').classList.remove('active');
-		document.getElementById('back2').classList.remove('active');
-		document.getElementById('back3').classList.add('active');
-		document.getElementById('back4').classList.remove('active');
+			document.getElementById('back1').classList.remove('active');
+			document.getElementById('back2').classList.remove('active');
+			document.getElementById('back3').classList.add('active');
+			document.getElementById('back4').classList.remove('active');
 
 
-		document.getElementById('no3Content').style.display="inline";
-		window.setTimeout(function(){document.getElementById('no3Content').classList.add('opacityUp')},10);
-		document.getElementById('topMargin3').classList.add('transitionUp');
-		document.getElementById('no3').classList.add('activeDivider');
-		hideNo1();
-		hideNo2();
-		hideNo4();
-	} 
+			document.getElementById('no3Content').style.display="inline";
+			window.setTimeout(function(){document.getElementById('no3Content').classList.add('opacityUp')},10);
+			document.getElementById('topMargin3').classList.add('transitionUp');
+			document.getElementById('no3').classList.add('activeDivider');
+			hideNo1();
+			hideNo2();
+			hideNo4();
+		} 
+	}
 }
 function hideNo3(){
 		
@@ -178,7 +187,8 @@ function hideNo3(){
 
 
 function displayNo4(){
-	if(firstClick){
+	if(window.innerWidth>window.innerHeight){
+		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');
 			document.getElementById('no3').classList.add('focustrans');
@@ -187,29 +197,30 @@ function displayNo4(){
 		
 		}
 			
-	if(no4==false){
-		no4=true;
-		
-		document.getElementById('no1').classList.remove('active');
-		document.getElementById('no2').classList.remove('active');
-		document.getElementById('no3').classList.remove('active');
-		document.getElementById('no4').classList.add('active');
+		if(no4==false){
+			no4=true;
+			
+			document.getElementById('no1').classList.remove('active');
+			document.getElementById('no2').classList.remove('active');
+			document.getElementById('no3').classList.remove('active');
+			document.getElementById('no4').classList.add('active');
 
-		document.getElementById('no1').classList.add('contanier.active');
-		
-		document.getElementById('back1').classList.remove('active');
-		document.getElementById('back2').classList.remove('active');
-		document.getElementById('back3').classList.remove('active');
-		document.getElementById('back4').classList.add('active');
+			document.getElementById('no1').classList.add('contanier.active');
+			
+			document.getElementById('back1').classList.remove('active');
+			document.getElementById('back2').classList.remove('active');
+			document.getElementById('back3').classList.remove('active');
+			document.getElementById('back4').classList.add('active');
 
-		document.getElementById('no4Content').style.display="inline";
-		window.setTimeout(function(){document.getElementById('no4Content').classList.add('opacityUp')},10);
-		document.getElementById('topMargin4').classList.add('transitionUp');
-		document.getElementById('no4').classList.add('activeDivider');
-		hideNo1();
-		hideNo2();
-		hideNo3();
-	} 
+			document.getElementById('no4Content').style.display="inline";
+			window.setTimeout(function(){document.getElementById('no4Content').classList.add('opacityUp')},10);
+			document.getElementById('topMargin4').classList.add('transitionUp');
+			document.getElementById('no4').classList.add('activeDivider');
+			hideNo1();
+			hideNo2();
+			hideNo3();
+		} 
+	}
 }
 function hideNo4(){
 		
