@@ -44,11 +44,18 @@ html, body {
 	width: 100%;
 	z-index: 10;
 	position: absolute;
+
 	left: 0;
 	top: 0;
 	background-color: white;
 	transition: opacity 3s;
 	
+}
+#introText{
+	padding-top: 15%;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 1s;
 }
 
 .fadeout{
@@ -318,8 +325,16 @@ table{
 
 .contentHide{
 	color: rgba(119,79,56,0);
-}
 
+}
+.contentHide table,.contentHide .company{
+	opacity: 0;
+}
+.opacityUp table,.opacityUp .company{
+	transition:opacity 0.5s;
+	transition-delay: 0.7s;
+	opacity: 1;
+}
 .opacityUp{
 	color: rgba(119,79,56,1);
 	opacity:1;

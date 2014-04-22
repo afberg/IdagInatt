@@ -27,16 +27,16 @@ function hide(){
 	}
 	//displayNo1();
 	firstClick=true;
-	runIntro();
+	window.setTimeout(runIntro(),4000);
 }
 
 
 function runIntro(){
-	
+	window.setTimeout(function(){document.getElementById('introText').style.opacity="1"},500);
 	//document.getElementById('intro').classList.remove('killintro');
-	window.setTimeout(function(){document.getElementById('intro').classList.add('fadeout')},100);
-	
-	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 2000);	
+	window.setTimeout(function(){document.getElementById('intro').classList.add('fadeout')},2500);
+	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2000);
+	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 4500);	
 	//document.getElementById('intro').classList.remove('fadeout');
 	//document.getElementById('intro').style.opacity = "1";
 	
