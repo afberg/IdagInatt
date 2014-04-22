@@ -103,6 +103,9 @@ img{
 	height:100%;
 
 }
+.header{
+	margin-bottom:-5%;
+}
 
 .crown{
 	text-align: center;
@@ -146,7 +149,16 @@ img{
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
-	margin-top:50px;
+	margin-top:30px;
+}
+#border{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	border-bottom:1px solid gray;
+	width:50%;
+	height:1px;
+	margin-top:15px;
 }
 
 #cloudNine{
@@ -166,9 +178,13 @@ img{
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
-	background-color: #57bbe7;
+	background-color: rgba(87,187,231,0.5);
+	transition:background-color 0.5s;
 	padding:5px;
 	max-width:320px;
+}
+#c9container:hover{
+	background-color: rgba(87,187,231,1);
 }
 
 h1{
@@ -198,7 +214,7 @@ h3{
 
 }
 
-p:first-letter{
+.content p:first-letter{
 	font-size:  380%;
 	font-family: 'royalinitialen';
 	font-weight: normal;
@@ -207,13 +223,23 @@ p:first-letter{
 	margin-bottom: -10px;
 
 }
+.company p:first-letter{
+	font-size:100%;
+	font-family:'georgia';
+	float:none;
+	margin-bottom:0px;
+}
 
 p{
-	padding:4%;
+	padding-left:8%;
+	padding-right:8%;
 	font-size:1.46rem;
 	font-weight: normal;
 	font-family: 'Georgia';
 	transition:inherit;
+	text-align: justify;
+	margin-top:4%;
+	-webkit-margin-after:0px;
 	
 }
 table{
