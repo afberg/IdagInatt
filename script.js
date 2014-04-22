@@ -21,9 +21,8 @@ function hide(){
 		document.getElementById('no4Content').classList.add('contentHide');
 		
 
-	}
-	else{
-		landscape = false;
+	
+	
 	}
 	displayNo1();
 	firstClick=true;
@@ -31,7 +30,9 @@ function hide(){
 }
 
 function displayContent(){
+	
 	if(window.innerWidth<window.innerHeight){
+		landscape=false;
 		no1=true;
 		no2=false;
 		no3=false;
@@ -40,19 +41,24 @@ function displayContent(){
 		displayNo2();
 		displayNo3();
 		displayNo4();
+		
 	}
-
 	if(window.innerWidth>=window.innerHeight){
-		if(no1==true){
-
-		}
+		
+		if (landscape==false) {
+			landscape=true;
+	
+			displayNo1();
+		};
+		landscape=true;
+		
 	}
 }
 
 
 
 function displayNo1(){
-	if(window.innerWidth>window.innerHeight){
+	if(landscape==true){
 		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');
@@ -84,9 +90,11 @@ function displayNo1(){
 			hideNo4();
 		} 
 	}
+
+	
 }
 function hideNo1() {
-
+	if(landscape){
 		no1=false;
 		document.getElementById('no1Content').classList.remove('opacityUp');
 		window.setTimeout(function(){document.getElementById('no1Content').style.display="none"},500);
@@ -94,10 +102,11 @@ function hideNo1() {
 		document.getElementById('topMargin1').classList.remove('transitionUpSpecial');
 	
 }
+}
 
 
 function displayNo2(){
-	if(window.innerWidth>window.innerHeight){
+	if (landscape) {
 		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');
@@ -140,7 +149,7 @@ function hideNo2() {
 }
 
 function displayNo3(){
-	if(window.innerWidth>window.innerHeight){
+	if(landscape){
 		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');
@@ -187,7 +196,7 @@ function hideNo3(){
 
 
 function displayNo4(){
-	if(window.innerWidth>window.innerHeight){
+	if(landscape){
 		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');
