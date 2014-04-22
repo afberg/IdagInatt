@@ -299,7 +299,7 @@ tr:nth-child(even) {
 }
 #back4{
 	opacity: 0.7;
-	background-color: #E08E79;
+	background-color: #ecbaae;
 	transition:all 1.5s;
 }
 
@@ -488,8 +488,25 @@ table{
 		position:relative;
 		margin-bottom:-5%;
 	}
+	h1{
+		margin-top:20px;
+	}
 	p{
-		margin-top:0;
+		margin-top:4%;
+	}
+	#no1{
+		height:140%;
+	}
+	#no2{
+		height:135%;
 	}
 
+}
+@media all and (orientation: landscape) {
+	#no1{
+		height:100%;
+	}
+	#no2{
+		height:100%;
+	}
 }
