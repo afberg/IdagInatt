@@ -164,7 +164,9 @@ p{
 	margin-top:inherit;
 	
 }
-
+table{
+	transition:color 1s, margin-top 1s;
+}
 td{
 	font-size:1.46rem;
 	font-weight: normal;
@@ -181,10 +183,9 @@ tr:nth-child(even) {
 
 .content{
 	z-index:1;
-	color: rgba(255,241,214,1);
+	color: rgba(119,79,56,1);
 	transition:color 1s, margin-top 1s;
-	margin-top:-10%;
-
+	
 }
 .container{
 	position: absolute;
