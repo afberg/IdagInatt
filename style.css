@@ -137,7 +137,7 @@ h3{
 	text-align: center;
 	font-family: 'Sorts Mill Goudy', serif;
 	font-weight: normal;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	text-align: center;
 	margin-bottom: 0px;
 	margin-top:20px;
@@ -292,10 +292,13 @@ table{
 		font-size:1.3rem;
 	}
 	h3{
-		font-size:1.6rem;
+		font-size:2.5rem;
 	}
 	.transitionUpSpecial {
   		height:17%;
+	}
+	td{
+		font-size:1.4rem;
 	}
 }
 @media screen and (max-width:1400px) and (orientation:landscape){
@@ -303,10 +306,13 @@ table{
 		font-size:3rem;
 	}
 	p{
-		font-size:1.1rem;
+		font-size:1.2rem;
 	}
 	h3{
-		font-size:1.2rem;
+		font-size:2rem;
+	}
+	td{
+		font-size:1.3rem;
 	}
 	.transitionUpSpecial {
   		height:14%;
@@ -315,13 +321,16 @@ table{
 
 @media screen and (max-width:1000px) and (orientation:landscape){
 	h1{
-		font-size:2.3rem;
+		font-size:2.5rem;
 	}
 	p{
-		font-size:0.85rem;
+		font-size:1rem;
 	}
 	h3{
-		font-size:1rem;
+		font-size:1.8rem;
+	}
+		td{
+		font-size:1.1rem;
 	}
 	.transitionUpSpecial {
   		height:10%;
