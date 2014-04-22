@@ -50,6 +50,7 @@ html, body {
 	transition: opacity 3s;
 	
 }
+
 .fadeout{
 	opacity: 0;
 }

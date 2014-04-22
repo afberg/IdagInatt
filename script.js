@@ -27,9 +27,21 @@ function hide(){
 	}
 	//displayNo1();
 	firstClick=true;
-	document.getElementById('intro').classList.add('fadeout');
-	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 2000);
+	runIntro();
 }
+
+
+function runIntro(){
+	
+	//document.getElementById('intro').classList.remove('killintro');
+	window.setTimeout(function(){document.getElementById('intro').classList.add('fadeout')},100);
+	
+	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 2000);	
+	//document.getElementById('intro').classList.remove('fadeout');
+	//document.getElementById('intro').style.opacity = "1";
+	
+}
+
 function all(){
 			document.getElementById('no1Content').style.display="inline";
 			document.getElementById('no2Content').style.display="inline";
@@ -140,7 +152,7 @@ function hideNo1() {
 
 function displayNo2(){
 
-
+	
 	if (landscape) {
 
 		if(firstClick){
