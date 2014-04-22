@@ -27,7 +27,8 @@ function hide(){
 	}
 	//displayNo1();
 	firstClick=true;
-	
+	document.getElementById('intro').classList.add('fadeout');
+	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 2000);
 }
 function all(){
 			document.getElementById('no1Content').style.display="inline";

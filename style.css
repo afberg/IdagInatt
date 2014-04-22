@@ -31,9 +31,29 @@ a{
 	border-style: none;
 }
 html, body {
+	overflow: hidden;
 	margin: 0px;
     height: 100%;
     width:100%;
+}
+
+
+#intro{
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: white;
+	transition: opacity 3s;
+	
+}
+.fadeout{
+	opacity: 0;
+}
+.killintro{
+	left:110% !important;
 }
 .initialSize{
 	width: 25% !important;
