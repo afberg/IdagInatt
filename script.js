@@ -21,9 +21,8 @@ function hide(){
 		document.getElementById('no4Content').classList.add('contentHide');
 		
 
-	}
-	else{
-		landscape = false;
+	
+	
 	}
 	displayNo1();
 	firstClick=true;
@@ -40,19 +39,22 @@ function displayContent(){
 		displayNo2();
 		displayNo3();
 		displayNo4();
+		landscape=false;
 	}
 
 	if(window.innerWidth>=window.innerHeight){
-		if(no1==true){
-
-		}
+		if (landscape==false) {
+			displayNo1();
+		};
+		landscape=true;
+		
 	}
 }
 
 
 
 function displayNo1(){
-	if(window.innerWidth>window.innerHeight){
+	if(landscape==true){
 		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');
@@ -83,6 +85,17 @@ function displayNo1(){
 			hideNo3();
 			hideNo4();
 		} 
+	}else{
+		
+			document.getElementById('no1').classList.add('active');
+			document.getElementById('no2').classList.add('active');
+			document.getElementById('no3').classList.add('active');
+			document.getElementById('no4').classList.add('active');
+
+			document.getElementById('back1').classList.add('active');
+			document.getElementById('back2').classList.add('active');
+			document.getElementById('back3').classList.add('active');
+			document.getElementById('back4').classList.add('active');
 	}
 }
 function hideNo1() {
@@ -97,7 +110,7 @@ function hideNo1() {
 
 
 function displayNo2(){
-	if(window.innerWidth>window.innerHeight){
+	if(landscape==true){
 		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');
@@ -140,7 +153,7 @@ function hideNo2() {
 }
 
 function displayNo3(){
-	if(window.innerWidth>window.innerHeight){
+	if(landscape){
 		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');
@@ -187,7 +200,7 @@ function hideNo3(){
 
 
 function displayNo4(){
-	if(window.innerWidth>window.innerHeight){
+	if(landscape){
 		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');

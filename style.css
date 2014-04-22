@@ -71,7 +71,7 @@ html, body {
 	background-image:url('kungenBackBW2.png');;
 	background-position: center;
 	width:100%;
-	overflow: scroll;
+	
 	height:100%;
 
 }
@@ -361,8 +361,8 @@ table{
 }
 
 @media all and (orientation: portrait) {
-	body{
-		overflow: visible;
+	#wrapper{
+		overflow: scroll;
 	}
 	.divider{
 
