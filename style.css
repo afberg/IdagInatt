@@ -148,11 +148,6 @@ img{
 	overflow:hidden;
 	margin-top:-187px;
 }
-
-.transitionUpSpecial {
-  height:20%;
-  transition:all 1s;
-}
 .transitionUp {
   height:0%;
   transition:all 1s;
