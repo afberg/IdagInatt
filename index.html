@@ -22,7 +22,29 @@
 
 
 		<!--Favicons end-->
+		<!-- Andreas stuff -->
+		@if($errors->has())
+			<script type="text/javascript">
+				var errors = '{{ implode($errors->all()) }}';
+				alert(errors);
+			</script>
+			<!-- @foreach ($errors->all() as $error) -->
+				<!-- <div class="validation_error">{{ $error }}</div> -->
+			<!-- @endforeach -->
+		@endif
 
+		@if(Session::has('message'))
+			<script type="text/javascript">
+				var message = '{{ Session::get(message") }}';	
+			</script>
+		@endif
+
+		@if(Session::has('error'))
+			<script type="text/javascript">
+				var error = '{{ Session::get("error") }}';
+			</script>
+			
+		@endif
 
 
 		<script type="text/javascript" src="script.js"></script>
@@ -201,24 +223,53 @@
 						<h3>Nominering</h3>
 						<p>Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...........Lorem ipsum osv...............</p>
 						
+						@if(time() < strtotime(Config::get('app.registration_deadline')))
 						<div id="toNom" onclick="openNom()" class="button">
 							<h2>Nominera</h2>
 						</div>
+						@endif
 					</div>
 					
+					<!-- REGISTRERING -->
+
 					<div id="registration">
+						
+						@if( time() < strtotime(Config::get('app.cv_deadline')))
+							{{ Form::open(array('url' => 'register', 'files' => true)) }}
+						@else
+							{{ Form::open(array('url' => 'register')) }}
+						@endif
+						
 						<h2>
 						<div id="name">
-							Namn: <input type="text" name="fname"><br>
+							{{ Form::text('firstname', null, array('placeholder' => 'Förnamn')) }}
 						</div>
 						<div id="surname">
-							Efternamn: <input type="text" name="lname"><br>
+							{{ Form::text('lastname', null, array('placeholder' => 'Efternamn')) }}
 						</div>
-						<div id="class" >
-							Klass: <input type="text" name="class"><br>
+						<div id="email" >
+							{{ Form::text('email', null, array('placeholder' => 'Email')) }}
 						</div>
-						<div id="special" >
-							Specialkost: <input type="text" name="special" class="textbox"><br>
+						<div id="class">
+							{{ Form::select('class', Config::get('app.registration_classes_dropdown'), 'Välj klass')}}
+						</div>
+						<div id="specialkost" >
+							{{ Form::text('special', null, array('placeholder' => 'Ev specialkost.'))}}
+						</div>
+						<div id="file">
+						@if( time() < strtotime(Config::get('app.cv_deadline')) ) 
+							{{ Form::file('file', null) }}
+							{{ Form::checkbox('company[]', 'Tactel') }}
+								{{Form::label('Tactel', 'Tactel')}}
+							{{ Form::checkbox('company[]', 'R\GA') }} 
+								{{Form::label('R\GAs', 'R\GA')}}
+
+						@endif
+						</div>
+						<div id="submit">
+						{{ Form::submit('Registrera') }}
+		
+						{{ Form::close() }}
 						</div>
 					</h2>
 
@@ -229,6 +280,18 @@
 					</div>
 
 					<div id="nomination">
+						@if($errors->has())
+							@foreach ($errors->all() as $error)
+								<div class="validation_error">{{ $error }}</div>
+							@endforeach
+						@endif
+						{{ Form::open(array('url' => 'nominate')) }}
+							{{ Form::token() }}
+							{{ Form::text('email', null, array('placeholder' => 'Email')) }}
+							{{ Form::select('nominated', Config::get('app.nomination_options')) }}
+							{{ Form::text('motivation', null, array('placeholder' => 'Motivering. Minst 20 tecken'))}}
+							{{ Form::submit('Nominera') }}
+						{{ Form::close() }}
 						<div onclick="back()" class="button">
 							<h2>Tillbaka</h2>
 						</div>
