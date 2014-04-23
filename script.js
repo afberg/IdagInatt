@@ -27,7 +27,7 @@ function hide(){
 	}
 	//displayNo1();
 	firstClick=true;
-	window.setTimeout(runIntro(),40);
+	window.setTimeout(runIntro(),4000);
 }
 
 
@@ -35,17 +35,17 @@ function runIntro(){
 	//choose random logo
 	var rand = Math.floor((Math.random()*10)+1);
 	if(rand<=5){
-		document.getElementById("logo").src="Logo3.png";	
+		document.getElementById("logo").src="img/Logo3.png";	
 	}else{
-		document.getElementById("logo").src="Logo4.png";	
+		document.getElementById("logo").src="img/Logo4.png";	
 	}
 
 	//do animations
-	/*window.setTimeout(function(){document.getElementById('introText').style.opacity="1"},500);
+	window.setTimeout(function(){document.getElementById('introText').style.opacity="1"},500);
 	//document.getElementById('intro').classList.remove('killintro');
 	window.setTimeout(function(){document.getElementById('intro').classList.add('fadeout')},3000);
-	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2500);*/
-	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 55);	
+	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2500);
+	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 5500);	
 	//document.getElementById('intro').classList.remove('fadeout');
 	//document.getElementById('intro').style.opacity = "1";
 	
