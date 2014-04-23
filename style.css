@@ -31,6 +31,10 @@ a{
 	border:none;
 	border-style: none;
 }
+a:-webkit-any-link:active {
+	color: inherit;
+}
+
 html, body {
 	overflow: hidden;
 	margin: 0px;
@@ -307,23 +311,24 @@ tr:nth-child(even) {
 #back1{
 	opacity: 0.7;
 	background-color: #C5E0DC;
-	transition:all 1.5s;
+	transition:all 1s;
 }
 #back2{
 	opacity: 0.7;
 	background-color: #ECE5CE;
-	transition:all 1.5s;
+	transition:all 1s;
 }
 #back3{
 	opacity: 0.7;
 	background-color: #F1D4AF;
-	transition:all 1.5s;
+	transition:all 1s;
 }
 #back4{
 	opacity: 0.7;
 	background-color: #ecbaae;
-	transition:all 1.5s;
+	transition:all 1s;
 }
+
 
 .container.active {
 	opacity: 0.95 !important;
