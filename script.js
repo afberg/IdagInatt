@@ -35,9 +35,9 @@ function runIntro(){
 	//choose random logo
 	var rand = Math.floor((Math.random()*10)+1);
 	if(rand<=5){
-		document.getElementById("logo").src="Logo3.png";	
+		document.getElementById("logo").src="img/Logo3.png";	
 	}else{
-		document.getElementById("logo").src="Logo4.png";	
+		document.getElementById("logo").src="img/Logo4.png";	
 	}
 
 	//do animations
@@ -315,15 +315,15 @@ function hideNo4(){
 	
 }
 function openReg(){
-	document.getElementById('startpage').style.display="none";
-	document.getElementById('registration').style.display="block";
+	document.getElementById('registration').classList.add('focus');
+	document.getElementById('startpage').classList.remove('focus');
 }
 function openNom(){
-	document.getElementById('startpage').style.display="none";
-	document.getElementById('nomination').style.display="block";
+	document.getElementById('nomination').classList.add('focus');
+	document.getElementById('startpage').classList.remove('focus');
 }
 function back(){
-	document.getElementById('startpage').style.display="block";
-	document.getElementById('registration').style.display="none";
-	document.getElementById('nomination').style.display="none";
+	document.getElementById('registration').classList.remove('focus');
+	document.getElementById('nomination').classList.remove('focus');
+	document.getElementById('startpage').classList.add('focus');
 }
