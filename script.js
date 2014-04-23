@@ -314,3 +314,16 @@ function hideNo4(){
 
 	
 }
+function openReg(){
+	document.getElementById('startpage').style.display="none";
+	document.getElementById('registration').style.display="block";
+}
+function openNom(){
+	document.getElementById('startpage').style.display="none";
+	document.getElementById('nomination').style.display="block";
+}
+function back(){
+	document.getElementById('startpage').style.display="block";
+	document.getElementById('registration').style.display="none";
+	document.getElementById('nomination').style.display="none";
+}
