@@ -27,7 +27,7 @@ function hide(){
 	}
 	//displayNo1();
 	firstClick=true;
-	window.setTimeout(runIntro(),4000);
+	window.setTimeout(runIntro(),40);
 }
 
 
@@ -41,11 +41,11 @@ function runIntro(){
 	}
 
 	//do animations
-	window.setTimeout(function(){document.getElementById('introText').style.opacity="1"},500);
+	/*window.setTimeout(function(){document.getElementById('introText').style.opacity="1"},500);
 	//document.getElementById('intro').classList.remove('killintro');
 	window.setTimeout(function(){document.getElementById('intro').classList.add('fadeout')},3000);
-	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2500);
-	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 5500);	
+	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2500);*/
+	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 55);	
 	//document.getElementById('intro').classList.remove('fadeout');
 	//document.getElementById('intro').style.opacity = "1";
 	
@@ -315,15 +315,15 @@ function hideNo4(){
 	
 }
 function openReg(){
-	document.getElementById('startpage').style.display="none";
-	document.getElementById('registration').style.display="block";
+	document.getElementById('registration').classList.add('focus');
+	document.getElementById('startpage').classList.remove('focus');
 }
 function openNom(){
-	document.getElementById('startpage').style.display="none";
-	document.getElementById('nomination').style.display="block";
+	document.getElementById('nomination').classList.add('focus');
+	document.getElementById('startpage').classList.remove('focus');
 }
 function back(){
-	document.getElementById('startpage').style.display="block";
-	document.getElementById('registration').style.display="none";
-	document.getElementById('nomination').style.display="none";
+	document.getElementById('registration').classList.remove('focus');
+	document.getElementById('nomination').classList.remove('focus');
+	document.getElementById('startpage').classList.add('focus');
 }
