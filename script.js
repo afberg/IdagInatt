@@ -75,7 +75,31 @@ function displayContent(){
 		no3=false;
 		no4=false;
 		all();
+		document.getElementById('back1').classList.add('back');
+		document.getElementById('back2').classList.add('back');
+		document.getElementById('back3').classList.add('back');
+		document.getElementById('back4').classList.add('back');
 
+			document.getElementById('no1Content').classList.add('mobilestyle');
+			document.getElementById('no2Content').classList.add('mobilestyle');
+			document.getElementById('no3Content').classList.add('mobilestyle');
+			document.getElementById('no4Content').classList.add('mobilestyle');
+
+		document.getElementById('content1').classList.add('contentstyle');
+		document.getElementById('content2').classList.add('contentstyle');
+		document.getElementById('content3').classList.add('contentstyle');
+		document.getElementById('content4').classList.add('contentstyle');
+
+		
+		document.getElementById('content1').style.backgroundColor="#C5E0DC";
+		document.getElementById('content2').style.backgroundColor="#ECE5CE";
+		document.getElementById('content3').style.backgroundColor="#F1D4AF";
+		document.getElementById('content4').style.backgroundColor="#ecbaae";		
+
+		document.getElementById('no1').style.display="initial";
+		document.getElementById('no2').style.display="initial";
+		document.getElementById('no3').style.display="initial";
+		document.getElementById('no4').style.display="initial";
 	}
 	if(window.innerWidth>=window.innerHeight){
 
@@ -88,6 +112,32 @@ function displayContent(){
 			landscape=true;
 			firstClick=false;
 			hide();
+
+
+		document.getElementById('back1').classList.remove('back');
+		document.getElementById('back2').classList.remove('back');
+		document.getElementById('back3').classList.remove('back');
+		document.getElementById('back4').classList.remove('back');
+			document.getElementById('no1Content').classList.remove('mobilestyle');
+			document.getElementById('no2Content').classList.remove('mobilestyle');
+			document.getElementById('no3Content').classList.remove('mobilestyle');
+			document.getElementById('no4Content').classList.remove('mobilestyle');
+
+		document.getElementById('content1').classList.remove('contentstyle');
+		document.getElementById('content2').classList.remove('contentstyle');
+		document.getElementById('content3').classList.remove('contentstyle');
+		document.getElementById('content4').classList.remove('contentstyle');
+
+		
+		document.getElementById('content1').style.backgroundColor="initial";
+		document.getElementById('content2').style.backgroundColor="initial";
+		document.getElementById('content3').style.backgroundColor="initial";
+		document.getElementById('content4').style.backgroundColor="initial";		
+
+		document.getElementById('no1').style.display="initial";
+		document.getElementById('no2').style.display="initial";
+		document.getElementById('no3').style.display="initial";
+		document.getElementById('no4').style.display="initial";
 		};
 		landscape=true;
 		

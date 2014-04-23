@@ -229,7 +229,22 @@ img{
 	max-width:320px;
 }
 
-
+.back{
+	display:none;
+}
+.mobilestyle{
+	position: inherit;
+	top: 0;
+	padding-bottom: 80px;
+	display: block;
+	min-height: 95%;
+	height: auto;
+}
+.contentstyle{
+	position: inherit !important;
+	height: auto !important;
+	display: inline-block;
+}
 h1{
 	text-align: center;
 	-webkit-font-smoothing: antialiased;
@@ -321,6 +336,8 @@ tr:nth-child(even) {
 	
 }
 .container{
+	min-width: 100%;
+	padding-bottom: 50px;
 	position: absolute;
 	top:0;
 	left:0;
@@ -573,11 +590,13 @@ table{
 }
 
 @media all and (orientation: portrait) {
+
+
 	#wrapper{
 		overflow: scroll;
 	}
 	.divider{
-
+		float:none;
 		width: 100% !important;
 		transition:all 0s;
 		
@@ -617,11 +636,19 @@ table{
 		margin-top:4%;
 	}
 	#no1{
-		height:140%;
+		height:relative%;
 	}
 	#no2{
-		height:135%;
+		height:relative;
 	}
+	#no4{
+		height: relative;
+		overflow: hidden;
+	}
+	#back4{
+		height: 130%;
+	}
+	
 
 }
 @media all and (orientation: landscape) {
