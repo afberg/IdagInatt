@@ -195,14 +195,12 @@ img{
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
-	background-color: rgba(87,187,231,0.5);
+	background-color: rgba(87,187,231,1);
 	transition:background-color 0.5s;
 	padding:5px;
 	max-width:320px;
 }
-#c9container:hover{
-	background-color: rgba(87,187,231,1);
-}
+
 
 h1{
 	text-align: center;
@@ -250,7 +248,7 @@ h3{
 p{
 	padding-left:8%;
 	padding-right:8%;
-	font-size:1.46rem;
+	font-size:1.3rem;
 	font-weight: normal;
 	font-family: 'Georgia';
 	transition:inherit;
@@ -430,7 +428,7 @@ table{
 		font-size:4rem;
 	}
 	p{
-		font-size:1.3rem;
+		font-size:1.15rem;
 	}
 	h3{
 		font-size:2.5rem;
@@ -450,7 +448,7 @@ table{
 		font-size:3rem;
 	}
 	p{
-		font-size:1.2rem;
+		font-size:1.05rem;
 	}
 	h3{
 		font-size:2rem;
@@ -477,7 +475,7 @@ table{
 		font-size:1.8rem;
 	}
 		td{
-		font-size:1.1rem;
+		font-size:1rem;
 	}
 	.transitionUpSpecial {
   		height:10%;
