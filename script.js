@@ -153,7 +153,6 @@ function displayNo2(){
 
 	
 	if (landscape) {
-
 		if(firstClick){
 			document.getElementById('no1').classList.add('focustrans');
 			document.getElementById('no2').classList.add('focustrans');

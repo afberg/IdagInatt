@@ -593,7 +593,7 @@ table{
 	}
 
 	#wrapper{
-		
+		background-image:url('img/kungenBackBWPortrait.png');
 		background-attachment: fixed;
 	}
 	.topMargin{
@@ -615,12 +615,6 @@ table{
 	}
 	p{
 		margin-top:4%;
-	}
-	#no1{
-		height:140%;
-	}
-	#no2{
-		height:135%;
 	}
 
 }
