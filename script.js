@@ -45,7 +45,7 @@ function runIntro(){
 	window.setTimeout(function(){document.getElementById('introText').style.opacity="1"},500);
 	//document.getElementById('intro').classList.remove('killintro');
 	window.setTimeout(function(){document.getElementById('intro').classList.add('fadeout')},3000);
-	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2500);*/
+	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2500);
 	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 5500);	
 	//document.getElementById('intro').classList.remove('fadeout');
 	//document.getElementById('intro').style.opacity = "1";
@@ -114,6 +114,9 @@ function displayNo1(){
 		if(no1==false){
 			no1=true;
 			
+			hideNo2();
+			hideNo3();
+			hideNo4();
 			document.getElementById('no1').classList.add('active');
 			document.getElementById('no2').classList.remove('active');
 			document.getElementById('no3').classList.remove('active');
@@ -127,14 +130,12 @@ function displayNo1(){
 			document.getElementById('no1Content').style.display="inline";
 			window.setTimeout(function(){document.getElementById('no1Content').classList.add('opacityUp')},10);
 			document.getElementById('back1').classList.add('active');
-			document.getElementById('topMargin1').classList.add('transitionUpSpecial');
+			document.getElementById('topMargin1').classList.add('transitionUp');
 
-			hideNo2();
-			hideNo3();
-			hideNo4();
 	}
 
 	
+}
 }
 function hideNo1() {
 	if(landscape){
@@ -142,7 +143,7 @@ function hideNo1() {
 		document.getElementById('no1Content').classList.remove('opacityUp');
 		window.setTimeout(function(){document.getElementById('no1Content').style.display="none"},500);
 		document.getElementById('no1').classList.remove('activeDivider');
-		document.getElementById('topMargin1').classList.remove('transitionUpSpecial');
+		document.getElementById('topMargin1').classList.remove('transitionUp');
 	
 }
 }
@@ -165,6 +166,9 @@ function displayNo2(){
 			firstClick=false;
 		}
 		if(no2==false){
+			hideNo1();
+			hideNo3();
+			hideNo4();
 			no2=true;
 			document.getElementById('no1').classList.remove('active');
 			document.getElementById('no2').classList.add('active');
@@ -181,9 +185,7 @@ function displayNo2(){
 			window.setTimeout(function(){document.getElementById('no2Content').classList.add('opacityUp')},10);
 			document.getElementById('topMargin2').classList.add('transitionUp');
 			document.getElementById('no2').classList.add('activeDivider');
-			hideNo1();
-			hideNo3();
-			hideNo4();
+			
 		} 
 	}
 }
@@ -214,7 +216,9 @@ function displayNo3(){
 
 		if(no3==false){
 			no3=true;
-			
+			hideNo1();
+			hideNo2();
+			hideNo4();
 			document.getElementById('no1').classList.remove('active');
 			document.getElementById('no2').classList.remove('active');
 			document.getElementById('no3').classList.add('active');
@@ -230,9 +234,7 @@ function displayNo3(){
 			window.setTimeout(function(){document.getElementById('no3Content').classList.add('opacityUp')},10);
 			document.getElementById('topMargin3').classList.add('transitionUp');
 			document.getElementById('no3').classList.add('activeDivider');
-			hideNo1();
-			hideNo2();
-			hideNo4();
+			
 		} 
 	}
 }
@@ -266,7 +268,9 @@ function displayNo4(){
 			
 		if(no4==false){
 			no4=true;
-			
+			hideNo1();
+			hideNo2();
+			hideNo3();
 			document.getElementById('no1').classList.remove('active');
 			document.getElementById('no2').classList.remove('active');
 			document.getElementById('no3').classList.remove('active');
@@ -283,9 +287,7 @@ function displayNo4(){
 			window.setTimeout(function(){document.getElementById('no4Content').classList.add('opacityUp')},10);
 			document.getElementById('topMargin4').classList.add('transitionUp');
 			document.getElementById('no4').classList.add('activeDivider');
-			hideNo1();
-			hideNo2();
-			hideNo3();
+			
 		} 
 	}
 }
