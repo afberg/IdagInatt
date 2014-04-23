@@ -503,22 +503,6 @@ table{
 .textbox{
 	border: 0;
 }
-@media screen and (min-width:2050px){
-	body{
-		overflow: hidden;
-	}
-	.transitionUpSpecial {
-  		height:25%;
-	}
-}
-@media screen and (min-width:2450px) and (orientation:landscape){
-	body{
-		overflow: hidden;
-	}
-	.transitionUpSpecial {
-  		height:30%;
-	}
-}
 
 @media screen and (max-width:1800px) and (orientation:landscape){
 	body{
@@ -528,7 +512,7 @@ table{
 		font-size:4rem;
 	}
 	p{
-		font-size:1.15rem;
+		font-size:0.9rem;
 	}
 	h3{
 		font-size:2.5rem;
@@ -548,7 +532,7 @@ table{
 		font-size:3rem;
 	}
 	p{
-		font-size:1.05rem;
+		font-size:0.85rem;
 	}
 	h3{
 		font-size:2rem;
@@ -569,7 +553,7 @@ table{
 		font-size:2.5rem;
 	}
 	p{
-		font-size:1rem;
+		font-size:0.8rem;
 	}
 	h3{
 		font-size:1.8rem;
@@ -612,7 +596,7 @@ table{
 	}
 
 	#wrapper{
-		
+		background-image:url('img/kungenBackBWPortrait.png');
 		background-attachment: fixed;
 	}
 	.topMargin{
@@ -635,6 +619,7 @@ table{
 	p{
 		margin-top:4%;
 	}
+
 	#no1{
 		height:relative%;
 	}
