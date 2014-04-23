@@ -32,6 +32,15 @@ function hide(){
 
 
 function runIntro(){
+	//choose random logo
+	var rand = Math.floor((Math.random()*10)+1);
+	if(rand<=5){
+		document.getElementById("logo").src="Logo3.png";	
+	}else{
+		document.getElementById("logo").src="Logo4.png";	
+	}
+
+	//do animations
 	window.setTimeout(function(){document.getElementById('introText').style.opacity="1"},500);
 	//document.getElementById('intro').classList.remove('killintro');
 	window.setTimeout(function(){document.getElementById('intro').classList.add('fadeout')},3000);

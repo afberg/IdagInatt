@@ -383,7 +383,24 @@ table{
 #no3Content{
 	text-align:center;
 }
+#startpage{
 
+	background-color: blue;
+	z-index: 4;
+}
+ #nomination{
+ 	background-color: red;
+ 	z-index: 5;
+ }
+ #registration{
+ 	background-color: green;
+ 	z-index: 2;
+ }
+#startpage #registration #nomination{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
 
 @media screen and (min-width:2050px){
 	body{
