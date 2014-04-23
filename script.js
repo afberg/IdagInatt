@@ -1,6 +1,7 @@
 
 window.onresize=displayContent;
 
+
 var no1=false;
 var no2=false;
 var no3=false;
