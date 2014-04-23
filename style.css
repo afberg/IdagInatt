@@ -84,6 +84,9 @@ html, body {
 	transition: opacity 3s;
 	
 }
+#intro img{
+	width: 50%;
+	}
 #introText{
 	
 	
@@ -580,6 +583,12 @@ table{
 
 @media all and (orientation: portrait) {
 
+	html{
+		-webkit-overflow-scrolling: touch;
+		overflow-y: hidden;
+		overflow-x: hidden;
+
+	}
 
 	#wrapper{
 		overflow: scroll;

@@ -18,8 +18,10 @@
 		<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
 		<meta name="msapplication-TileColor" content="#e08e79">
 		<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
-		<meta id="viewport"> 
-
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<meta name="viewport" content="width=device-width" /> 
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 		<!--Favicons end-->
 		<!-- Andreas stuff -->
 		@if($errors->has())
