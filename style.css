@@ -51,7 +51,7 @@ html, body {
 
 	left: 0;
 	top: 0;
-	background-image:url('img/kungenBackBW2.png');
+	background-image:url('../img/kungenBackBW2.png');
 	background-position: center;
 	
 	transition: opacity 3s;
@@ -115,7 +115,7 @@ img{
 
 } 	
 #wrapper{
-	background-image:url('img/kungenBackBW2.png');
+	background-image:url('../img/kungenBackBW2.png');
 	background-position: center;
 	width:100%;
 	overflow: hidden;
