@@ -87,7 +87,6 @@ img{
 }
 .divider{
 	position: relative;
-	box-shadow: 0 0 30px 30px rgba(255,241,214,0.1) inset;
 	width:20%;
 	height:100%;
 	margin:0px;
@@ -327,6 +326,22 @@ tr:nth-child(even) {
 	opacity: 0.7;
 	background-color: #ecbaae;
 	transition:all 1s;
+}
+#no1:hover #back1{
+	opacity:0.95;
+
+}
+#no2:hover #back2{
+	opacity:0.95;
+	
+}
+#no3:hover #back3{
+	opacity:0.95;
+	
+}
+#no4:hover #back4{
+	opacity:0.95;
+	
 }
 
 
