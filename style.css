@@ -21,6 +21,18 @@
 
 }
 
+input[type="text"], input[type="password"], select, input[type="file"], #company_checkboxes{
+	border: none;
+	padding: 18px 12px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 12px;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 2px;
+	width: 256px;
+	color: #666;
+}
+
 html{
 	font-size:100%;
 	
