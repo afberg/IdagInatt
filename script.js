@@ -44,7 +44,7 @@ function runIntro(){
 	window.setTimeout(function(){document.getElementById('introText').style.opacity="1"},500);
 	//document.getElementById('intro').classList.remove('killintro');
 	window.setTimeout(function(){document.getElementById('intro').classList.add('fadeout')},3000);
-	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2500);
+	window.setTimeout(function(){document.getElementById('introText').style.opacity="0"},2500);*/
 	window.setTimeout(function(){document.getElementById('intro').classList.add('killintro')}, 5500);	
 	//document.getElementById('intro').classList.remove('fadeout');
 	//document.getElementById('intro').style.opacity = "1";
@@ -126,26 +126,11 @@ function displayNo1(){
 			document.getElementById('no1Content').style.display="inline";
 			window.setTimeout(function(){document.getElementById('no1Content').classList.add('opacityUp')},10);
 			document.getElementById('back1').classList.add('active');
-			document.getElementById('topMargin1').classList.add('transitionUp');
+			document.getElementById('topMargin1').classList.add('transitionUpSpecial');
 
 			hideNo2();
 			hideNo3();
 			hideNo4();
-		} 
-		else{
-
-		}
-	}else{
-		
-			document.getElementById('no1').classList.add('active');
-			document.getElementById('no2').classList.add('active');
-			document.getElementById('no3').classList.add('active');
-			document.getElementById('no4').classList.add('active');
-
-			document.getElementById('back1').classList.add('active');
-			document.getElementById('back2').classList.add('active');
-			document.getElementById('back3').classList.add('active');
-			document.getElementById('back4').classList.add('active');
 	}
 
 	
@@ -156,7 +141,7 @@ function hideNo1() {
 		document.getElementById('no1Content').classList.remove('opacityUp');
 		window.setTimeout(function(){document.getElementById('no1Content').style.display="none"},500);
 		document.getElementById('no1').classList.remove('activeDivider');
-		document.getElementById('topMargin1').classList.remove('transitionUp');
+		document.getElementById('topMargin1').classList.remove('transitionUpSpecial');
 	
 }
 }
