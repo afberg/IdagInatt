@@ -399,9 +399,12 @@ table{
 #startpage #registration #nomination{
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 }
+.button{
+	background-color: white;
 
+}
 @media screen and (min-width:2050px){
 	body{
 		overflow: hidden;
