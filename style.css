@@ -604,7 +604,15 @@ h4{
 		overflow-x: hidden;
 
 	}
-
+	p{
+		text-align: center;
+	}
+	.content p:first-letter{
+		font-size:100%;
+		font-family:'georgia';
+		float:none;
+		margin-bottom:0px;
+	}
 	#wrapper{
 		overflow: scroll;
 	}
