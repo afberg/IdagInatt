@@ -61,7 +61,9 @@ a{
 a:-webkit-any-link:active {
 	color: inherit;
 }
-
+img{
+	border-style:none;
+}
 html, body {
 	overflow: hidden;
 	margin: 0px;
