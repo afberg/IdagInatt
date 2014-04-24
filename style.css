@@ -259,7 +259,7 @@ h1{
 	margin-bottom: 0px;
 	margin-top:0px;
 	letter-spacing: -3px;
-	-webkit-text-stroke: 2px rgba(119,79,56,0.4)
+	
 }
 
 
@@ -487,7 +487,7 @@ table{
 	height: 100% !important;
 	opacity: 1 !important;
 }
-.button h2{
+.button h3{
 	font-size: 2rem;
 	padding: 3%;
 	margin-top: 3%;
@@ -503,6 +503,16 @@ table{
 	opacity: 0.8;
 	margin-left: auto;
 	margin-right: auto;
+}
+h4{
+	font-family: 'Georgia';
+	font-weight: bold;
+}
+#no4 p:first-letter{
+	font-size:100%;
+	font-family:'georgia';
+	float:none;
+	margin-bottom:0px;
 }
 
 .button.reg_button
