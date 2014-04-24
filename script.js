@@ -71,6 +71,12 @@ function displayContent(){
 	if(window.innerWidth<window.innerHeight){
 		landscape=false;
 
+		document.getElementById('no1').classList.remove('active');
+		document.getElementById('no2').classList.remove('active');
+		document.getElementById('no3').classList.remove('active');
+		document.getElementById('no4').classList.remove('active');
+
+
 		all();
 		document.getElementById('back1').classList.add('back');
 		document.getElementById('back2').classList.add('back');
@@ -108,15 +114,20 @@ function displayContent(){
 			hide();
 			if(no1){
 				document.getElementById('no1Content').style.display="initial";
+				document.getElementById('no1').classList.add('active');
+
 			}
 			else if(no2){
 				document.getElementById('no2Content').style.display="initial";
+				document.getElementById('no2').classList.add('active');
 			}
 			else if(no3){
 				document.getElementById('no3Content').style.display="initial";
+				document.getElementById('no3').classList.add('active');
 			}
 			else if(no4){
 				document.getElementById('no4Content').style.display="initial";
+				document.getElementById('no4').classList.add('active');
 			}
 			document.getElementById('back1').classList.remove('active');
 			document.getElementById('back2').classList.remove('active');
