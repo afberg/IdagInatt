@@ -70,10 +70,7 @@ function displayContent(){
 	
 	if(window.innerWidth<window.innerHeight){
 		landscape=false;
-		no1=true;
-		no2=false;
-		no3=false;
-		no4=false;
+
 		all();
 		document.getElementById('back1').classList.add('back');
 		document.getElementById('back2').classList.add('back');
@@ -105,39 +102,51 @@ function displayContent(){
 
 		
 		if (landscape==false) {
-			no1=false;
-			no4=false;
-			no3=false;
-			no2=false;
+			
 			landscape=true;
 			firstClick=false;
 			hide();
+			if(no1){
+				document.getElementById('no1Content').style.display="initial";
+			}
+			else if(no2){
+				document.getElementById('no2Content').style.display="initial";
+			}
+			else if(no3){
+				document.getElementById('no3Content').style.display="initial";
+			}
+			else if(no4){
+				document.getElementById('no4Content').style.display="initial";
+			}
+			document.getElementById('back1').classList.remove('active');
+			document.getElementById('back2').classList.remove('active');
+			document.getElementById('back3').classList.remove('active');
+			document.getElementById('back4').classList.remove('active');
 
-
-		document.getElementById('back1').classList.remove('back');
-		document.getElementById('back2').classList.remove('back');
-		document.getElementById('back3').classList.remove('back');
-		document.getElementById('back4').classList.remove('back');
+			document.getElementById('back1').classList.remove('back');
+			document.getElementById('back2').classList.remove('back');
+			document.getElementById('back3').classList.remove('back');
+			document.getElementById('back4').classList.remove('back');
 			document.getElementById('no1Content').classList.remove('mobilestyle');
 			document.getElementById('no2Content').classList.remove('mobilestyle');
 			document.getElementById('no3Content').classList.remove('mobilestyle');
 			document.getElementById('no4Content').classList.remove('mobilestyle');
 
-		document.getElementById('content1').classList.remove('contentstyle');
-		document.getElementById('content2').classList.remove('contentstyle');
-		document.getElementById('content3').classList.remove('contentstyle');
-		document.getElementById('content4').classList.remove('contentstyle');
+			document.getElementById('content1').classList.remove('contentstyle');
+			document.getElementById('content2').classList.remove('contentstyle');
+			document.getElementById('content3').classList.remove('contentstyle');
+			document.getElementById('content4').classList.remove('contentstyle');
 
-		
-		document.getElementById('content1').style.backgroundColor="initial";
-		document.getElementById('content2').style.backgroundColor="initial";
-		document.getElementById('content3').style.backgroundColor="initial";
-		document.getElementById('content4').style.backgroundColor="initial";		
+			
+			document.getElementById('content1').style.backgroundColor="initial";
+			document.getElementById('content2').style.backgroundColor="initial";
+			document.getElementById('content3').style.backgroundColor="initial";
+			document.getElementById('content4').style.backgroundColor="initial";		
 
-		document.getElementById('no1').style.display="initial";
-		document.getElementById('no2').style.display="initial";
-		document.getElementById('no3').style.display="initial";
-		document.getElementById('no4').style.display="initial";
+			document.getElementById('no1').style.display="initial";
+			document.getElementById('no2').style.display="initial";
+			document.getElementById('no3').style.display="initial";
+			document.getElementById('no4').style.display="initial";
 		};
 		landscape=true;
 		
@@ -162,8 +171,8 @@ function displayNo1(){
 		}
 
 		if(no1==false){
-			no1=true;
 			
+			no1=true;
 			hideNo2();
 			hideNo3();
 			hideNo4();
@@ -186,6 +195,7 @@ function displayNo1(){
 
 	
 }
+
 }
 function hideNo1() {
 	if(landscape){
@@ -237,6 +247,7 @@ function displayNo2(){
 			
 		} 
 	}
+	no2=true;
 }
 function hideNo2() {
 		no2=false;
@@ -264,7 +275,7 @@ function displayNo3(){
 		}
 
 		if(no3==false){
-			no3=true;
+			
 			hideNo1();
 			hideNo2();
 			hideNo4();
@@ -286,6 +297,7 @@ function displayNo3(){
 			
 		} 
 	}
+	no3=true;
 }
 function hideNo3(){
 		
@@ -316,7 +328,7 @@ function displayNo4(){
 		}
 			
 		if(no4==false){
-			no4=true;
+			
 			hideNo1();
 			hideNo2();
 			hideNo3();
@@ -339,6 +351,7 @@ function displayNo4(){
 			
 		} 
 	}
+	no4=true;
 }
 function hideNo4(){
 		
