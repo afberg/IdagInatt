@@ -430,6 +430,7 @@ table{
 
 #content4{
 	display: inline-table;
+	text-align: center;
 	min-height: 100%;
 }
 
@@ -478,7 +479,7 @@ table{
  	
  	z-index: 2;
  }
-#startpage, #registration, #nomination{
+#startpage, #registration, #nomination, #noRegister{
 	height: 0;
 	opacity: 0;
 	text-align: center;
@@ -528,7 +529,11 @@ h4{
 .textbox{
 	border: 0;
 }
+#noRegister{
+	display: none;
+	margin-top: 50px;
 
+}
 @media screen and (max-width:1800px) and (orientation:landscape){
 	body{
 		overflow: hidden;
@@ -608,6 +613,15 @@ h4{
 	}
 	p{
 		text-align: center;
+	}
+	#startpage{
+		display: none;
+
+	}
+	#noRegister{
+		margin-left: 10%;
+		margin-right: 10%;
+		display: inline-table;
 	}
 	.content p:first-letter{
 		font-size:100%;

@@ -70,7 +70,7 @@ function displayContent(){
 	
 	if(window.innerWidth<window.innerHeight){
 		landscape=false;
-
+		document.getElementById("content").innerHTML = "whatever";
 		document.getElementById('no1').classList.remove('active');
 		document.getElementById('no2').classList.remove('active');
 		document.getElementById('no3').classList.remove('active');
