@@ -293,7 +293,7 @@
 						<div id="specialkost" >
 							{{ Form::text('special', null, array('placeholder' => 'Ev specialkost.'))}}
 						</div>
-						<div id="file">
+						<!-- <div id="file">
 						@if( time() < strtotime(Config::get('app.cv_deadline')) ) 
 							{{ Form::file('file', null) }}
 							{{ Form::checkbox('company[]', 'Tactel') }}
@@ -302,7 +302,7 @@
 								{{Form::label('R\GAs', 'R\GA')}}
 
 						@endif
-						</div>
+						</div> -->
 						<div id="submit">
 						{{ Form::submit('Registrera') }}
 		
