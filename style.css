@@ -109,6 +109,7 @@ html, body {
 }
 .killintro{
 	left:110% !important;
+	display:none;
 }
 .initialSize{
 	width: 25% !important;
