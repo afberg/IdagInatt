@@ -36,9 +36,9 @@ function runIntro(){
 	//choose random logo
 	var rand = Math.floor((Math.random()*10)+1);
 	if(rand<=5){
-		document.getElementById("logo").src="img/Logo3.png";	
-	}else{
-		document.getElementById("logo").src="img/Logo4.png";	
+		document.getElementById("logo").src="img/Logo5.png";	
+	}else {
+		document.getElementById("logo").src="img/Logo6.png";	
 	}
 
 	//do animations
@@ -255,7 +255,7 @@ function displayNo2(){
 			window.setTimeout(function(){document.getElementById('no2Content').classList.add('opacityUp')},10);
 			document.getElementById('topMargin2').classList.add('transitionUp');
 			document.getElementById('no2').classList.add('activeDivider');
-			
+			document.getElementById('topMargin2').style.height="10%";
 		} 
 	}
 	no2=true;
@@ -266,7 +266,7 @@ function hideNo2() {
 		window.setTimeout(function(){document.getElementById('no2Content').style.display="none"},500);
 		document.getElementById('no2').classList.remove('activeDivider');
 		document.getElementById('topMargin2').classList.remove('transitionUp');
-
+		document.getElementById('topMargin2').style.height="35%";
 
 	
 }
