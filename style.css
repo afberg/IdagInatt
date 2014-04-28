@@ -140,6 +140,12 @@ img{
 	position:relative;
 
 }
+
+#topMargin2
+{
+	height: 35%;
+}
+
 .topMargin{
 	display:block;
 	width:100%;
