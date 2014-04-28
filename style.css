@@ -470,6 +470,9 @@ table{
 	margin-top: 15%;
 	text-align:center;
 }
+#content1,#content2,#content3,#content4{
+
+}
 #no1.active #content1,#no2.active #content2,#no3.active #content3,#no4.active #startPage{
 	overflow-y: scroll;
 }
