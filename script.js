@@ -279,7 +279,6 @@ function displayNo2(){
 			window.setTimeout(function(){document.getElementById('no2Content').classList.add('opacityUp')},10);
 			document.getElementById('topMargin2').classList.add('transitionUp');
 			document.getElementById('no2').classList.add('activeDivider');
-			document.getElementById('topMargin2').style.height="10%";
 		} 
 	}
 	no2=true;
@@ -290,7 +289,6 @@ function hideNo2() {
 		window.setTimeout(function(){document.getElementById('no2Content').style.display="none"},500);
 		document.getElementById('no2').classList.remove('activeDivider');
 		document.getElementById('topMargin2').classList.remove('transitionUp');
-		document.getElementById('topMargin2').style.height="35%";
 
 	
 }

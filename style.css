@@ -141,10 +141,6 @@ img{
 
 }
 
-#topMargin2
-{
-	height: 35%;
-}
 
 .topMargin{
 	display:block;
@@ -185,7 +181,7 @@ img{
 .active .crown{
 	opacity:0;
 	overflow:hidden;
-	margin-top:-187px;
+	margin-top:-200px;
 }
 .transitionUp {
   height:0%;
@@ -314,6 +310,7 @@ p{
 	text-align: justify;
 	margin-top:4%;
 	-webkit-margin-after:0px;
+	line-height:150%;
 	
 }
 table{
