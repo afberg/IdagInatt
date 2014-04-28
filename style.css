@@ -433,7 +433,7 @@ table{
 }
 
 #content4{
-	display: inline-table;
+	
 	text-align: center;
 	min-height: 100%;
 }
@@ -477,7 +477,7 @@ table{
 	overflow-y: scroll;
 }
 #startpage{
-
+	
 	margin-top: 40px;
 	z-index: 4;
 }
@@ -498,9 +498,10 @@ table{
 	text-align: center;
 	transition:opacity 1s;
 	overflow: hidden;
+	overflow-y:scroll;
 }
-.focus{
-	height: 100% !important;
+#startpage.focus{
+	height: 80% !important;
 	opacity: 1 !important;
 }
 .button h3{
@@ -629,12 +630,12 @@ h4{
 	}
 	#startpage{
 		display: none;
-
 	}
 	#noRegister{
+		display: inline-table;
 		margin-left: 10%;
 		margin-right: 10%;
-		display: inline-table;
+		
 	}
 	.content p:first-letter{
 		font-size:100%;

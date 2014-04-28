@@ -8,6 +8,28 @@ var no3=false;
 var no4=false;
 var firstClick=false;
 var landscape = true;
+
+function openReg(){
+	document.getElementById('registration').classList.add('focus');
+	document.getElementById('startpage').classList.remove('focus');
+}
+function openNom(){
+	document.getElementById('nomination').classList.add('focus');
+	document.getElementById('startpage').classList.remove('focus');
+}
+function back(){
+	document.getElementById('registration').classList.remove('focus');
+	document.getElementById('nomination').classList.remove('focus');
+	document.getElementById('startpage').classList.add('focus');
+}
+function portrait(){
+	document.getElementById('registration').classList.remove('focus');
+	document.getElementById('nomination').classList.remove('focus');
+	document.getElementById('startpage').classList.remove('focus');
+	document.getElementById('noRegister').classList.add('focus');
+}
+
+
 function hide(){
 	/*document.getElementById('no1').classList.add('active');*/
 	displayContent();
@@ -70,7 +92,7 @@ function displayContent(){
 	
 	if(window.innerWidth<window.innerHeight){
 		landscape=false;
-		
+		portrait();
 		document.getElementById('no1').classList.remove('active');
 		document.getElementById('no2').classList.remove('active');
 		document.getElementById('no3').classList.remove('active');
@@ -108,7 +130,8 @@ function displayContent(){
 
 		
 		if (landscape==false) {
-			
+			document.getElementById('noRegister').classList.remove('focus');
+			back();
 			landscape=true;
 			firstClick=false;
 			hide();
@@ -375,17 +398,4 @@ function hideNo4(){
 
 
 	
-}
-function openReg(){
-	document.getElementById('registration').classList.add('focus');
-	document.getElementById('startpage').classList.remove('focus');
-}
-function openNom(){
-	document.getElementById('nomination').classList.add('focus');
-	document.getElementById('startpage').classList.remove('focus');
-}
-function back(){
-	document.getElementById('registration').classList.remove('focus');
-	document.getElementById('nomination').classList.remove('focus');
-	document.getElementById('startpage').classList.add('focus');
 }
