@@ -399,3 +399,24 @@ function hideNo4(){
 
 	
 }
+
+
+function openReg(){
+	document.getElementById('registration').classList.add('focus');
+	document.getElementById('startpage').classList.remove('focus');
+}
+function openNom(){
+	document.getElementById('nomination').classList.add('focus');
+	document.getElementById('startpage').classList.remove('focus');
+}
+function back(){
+	document.getElementById('registration').classList.remove('focus');
+	document.getElementById('nomination').classList.remove('focus');
+	document.getElementById('startpage').classList.add('focus');
+}
+function portrait(){
+	document.getElementById('registration').classList.remove('focus');
+	document.getElementById('nomination').classList.remove('focus');
+	document.getElementById('startpage').classList.remove('focus');
+	document.getElementById('noRegister').classList.add('focus');
+}

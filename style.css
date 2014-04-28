@@ -500,7 +500,7 @@ table{
 	overflow: hidden;
 	overflow-y:scroll;
 }
-#startpage.focus{
+.focus{
 	height: 80% !important;
 	opacity: 1 !important;
 }
