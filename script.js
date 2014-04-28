@@ -197,6 +197,7 @@ function displayNo1(){
 			document.getElementById('back3').classList.remove('active');
 			document.getElementById('back4').classList.remove('active');
 
+			document.getElementById('no1Content').style.overflowY="scroll";
 			document.getElementById('no1Content').style.display="inline";
 			window.setTimeout(function(){document.getElementById('no1Content').classList.add('opacityUp')},10);
 			document.getElementById('back1').classList.add('active');

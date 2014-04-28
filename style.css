@@ -343,7 +343,7 @@ tr:nth-child(even) {
 }
 .container{
 	min-width: 100%;
-	padding-bottom: 50px;
+	
 	position: absolute;
 	top:0;
 	left:0;
@@ -393,6 +393,7 @@ tr:nth-child(even) {
 .container.active {
 	opacity: 0.95 !important;
 	width:100% !important;
+		
 
 }
 table{
@@ -425,10 +426,6 @@ table{
 	margin-top:0;
 }
 
-#no1Content{
-	text-align: justify;
-}
-
 #content4{
 	display: inline-table;
 	text-align: center;
@@ -451,6 +448,10 @@ table{
 #no2Header{
 	text-align: center;
 }
+#no1Content{
+	text-align: justify;
+	overflow-y:hidden 
+}
 #no2Content{
 	width:100%;
 	margin:auto;
@@ -463,7 +464,9 @@ table{
 	margin-top: 15%;
 	text-align:center;
 }
-
+#no1.active #content1,#no2.active #content2,#no3.active #content3,#no4.active #startPage{
+	overflow-y: scroll;
+}
 #startpage{
 
 	margin-top: 40px;
